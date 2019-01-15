@@ -7,7 +7,7 @@ module.exports = class Movies{
             Make moviesOrderedByStarts a constant that receives the output of orderByStars,
             and you need to send a copy of moviesData as a parameter. (Hint: Spread Operator)
     */
-    const moviesOrderedByStars = moviesData.slice(0);
+    let moviesOrderedByStars = moviesData.slice(0);
     moviesOrderedByStars = this.orderByStars(moviesOrderedByStars);
 
     //TODO: UNIVA-GIT-005: replace moviesData.forEach for moviesOrderedByStars.forEach
