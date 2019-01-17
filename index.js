@@ -2,8 +2,8 @@ const Theaters = new (require('./classes/Theaters.js'))();
 const Movies = new (require('./classes/Movies.js'))();
 
 
-//TODO: UNIVA-GIT-001: Increase value to be at least 5;
-const VIP_HIGH_AVAILABILITY = 2;
+
+const VIP_HIGH_AVAILABILITY = 7;
 
 
 class CinemasApp{
@@ -17,8 +17,8 @@ class CinemasApp{
 
 
     if(Theaters.getVIPCount() >= VIP_HIGH_AVAILABILITY){
-        //TODO: UNIVA-GIT-001: Uncomment the next line
-        //console.log(`Parece que hay muchas opciones de cines VIP! 🤓`);
+        
+        console.log(`Parece que hay muchas opciones de cines VIP! 🤓`);
     }
 
     console.log(`Las películas recomendadas son: \n`);
