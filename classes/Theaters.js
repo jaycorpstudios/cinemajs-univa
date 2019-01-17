@@ -16,9 +16,7 @@ module.exports = class Theaters{
 
   showTheatersInfo() {
     theatersData.forEach( theater => {
-      //TODO: UNIVA-GIT-004: Modify to also display Address:
-      //🏨 Cinepolis Ciudadela 📍 Dirección: Calle Labna 1437, Jalisco
-      console.log(`🏨 ${theater.name}`);
+      console.log(`🏨 ${theater.name} 📍 Dirección: ${theater.state}, ${theater.state}`);
     });
   }
 
