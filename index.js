@@ -9,6 +9,7 @@ const VIP_HIGH_AVAILABILITY = 2;
 class CinemasApp{
 
   initShowTimes(){
+    console.log('Olii');
     console.log(`¡Bienvenidos a ShowTime App!`);
     console.log(`Los cines disponibles en la región son: \n`);
     Theaters.showTheatersInfo();
