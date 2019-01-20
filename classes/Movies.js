@@ -13,7 +13,27 @@ module.exports = class Movies{
 
   //TODO: UNIVA-GIT-002: Iterate over moviesData to display Directors (Unique values, not repeated)
   displayDirectors() {
-    console.log();
+    let arraytoSaveData = new Array();
+    let repeated = false;
+        moviesData.forEach(function(element){
+          for (var i = 0; i < arraytoSaveData.length; i++) {
+            if(arraytoSaveData[i] == element.director){
+              repeated = true;
+              break;
+            }else{
+              repeated = false;
+            }  
+          }
+          arraytoSaveData.push(element.director);
+          if(repeated == false){
+            console.log(element.director);  
+          }
+    });
+    /*moviesData.forEach(element. => {
+      console.log(element);
+    });
+    */
+    //console.log(element);
   }
 
   orderByStars(movies){
