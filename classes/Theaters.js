@@ -10,13 +10,11 @@ module.exports = class Theaters{
     });
   }
 
-  
+
   getVIPCount(){
     let vipCount = 0;
-    theatersData.forEach(theater => {
-     if(theater.hasVIP === true) {
-    vipCount++;
-     } 
+    [...theatersData].forEach(theater => {
+      vipCount = theater.hasVIP ? vipCount + 1 : vipCount;
     });
     return vipCount;
   }
