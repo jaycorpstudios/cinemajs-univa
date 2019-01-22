@@ -10,13 +10,15 @@ module.exports = class Theaters{
     });
   }
 
-  //TODO: UNIVA-GIT-001: fix this to return real value:
+  
   getVIPCount(){
     let vipCount = 0;
     theatersData.forEach(theater => {
-
+     if(theater.hasVIP === true) {
+    vipCount++;
+     } 
     });
-    return 0;
+    return vipCount;
   }
 
 }
