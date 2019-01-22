@@ -1,4 +1,3 @@
-//TODO: UNIVA-GIT-003: Add at least 4 more VIP locations.
 
 const theaters = [
   {
@@ -29,8 +28,44 @@ const theaters = [
     hasVIP: false
   },
   {
-    name: 'Cinemex Punto Sao Paulo',
+    name: 'Cinépolis Real Center',
     id: 4,
+    brand: 'Cinepolis',
+    location: { lat: 20.732485, long: -103.428662 },
+    street: 'Av. Santa Margarita 3600',
+    state: 'Jalisco',
+    hasVIP: true
+  },
+  {
+    name: 'Cinepolis VIP Midtown',
+    id: 5,
+    brand: 'Cinepolis',
+    location: { lat: 20.694552, long: -103.376564 },
+    street: 'Italia Providencia 44648',
+    state: 'Jalisco',
+    hasVIP: true
+  },
+  {
+    name: 'Cinepolis VIP Andares',
+    id: 6,
+    brand: 'Cinepolis',
+    location: { lat: 20.712211, long: -103.410739 },
+    street: 'Boulevard Puerta de Hierro 2085',
+    state: 'Jalisco',
+    hasVIP: true
+  },
+  {
+    name: 'Cinepolis Pabellón Guadalajara',
+    id: 7,
+    brand: 'Cinepolis',
+    location: { lat: 20.709510, long: -103.406031 },
+    street: 'Av. Acueducto 2380',
+    state: 'Jalisco',
+    hasVIP: true
+  },
+  {
+    name: 'Cinemex Punto Sao Paulo',
+    id: 8,
     brand: 'Cinemex',
     location: { lat: 20.702281, long: -103.376779 },
     street: 'Valparaiso 2367',
