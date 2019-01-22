@@ -26,7 +26,7 @@ module.exports = class Theaters{
   getVIPCount(){
     let vipCount = 0;
     theatersData.forEach(theater => {
-     if(theater.hasVIP = true) {
+     if(theater.hasVIP === true) {
     vipCount++;
      } 
     });
