@@ -25,8 +25,6 @@ class CinemasApp{
     console.log(`Las películas recomendadas son: \n`);
     Movies.displayMovies();
 
-
-    //TODO: UNIVA-GIT-002: Uncomment the followed two lines:
     console.log(`Los directores mas mencionados son: \n`);
     Movies.displayDirectors();
 
